@@ -131,4 +131,6 @@ The things the grading code is looking for are:
 
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
 
-
+## My exports
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl
+export OPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2k/include
