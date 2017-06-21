@@ -28,7 +28,7 @@ struct Particle {
 class ParticleFilter {
 	
 	// Number of particles to draw
-	int num_particles; 
+	int numParticles;
 	
 	
 	
@@ -45,7 +45,7 @@ public:
 
 	// Constructor
 	// @param M Number of particles
-	ParticleFilter() : num_particles(0), is_initialized(false) {}
+	ParticleFilter() : numParticles(0), is_initialized(false) {}
 
 	// Destructor
 	~ParticleFilter() {}
@@ -114,6 +114,8 @@ public:
 	const bool initialized() const {
 		return is_initialized;
 	}
+
+	std::string makeString(std::vector<double, std::allocator<double>> &v) const;
 };
 
 
