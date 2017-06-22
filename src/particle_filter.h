@@ -28,7 +28,7 @@ struct Particle {
 class ParticleFilter {
 	
 	// Number of particles to draw
-	int numParticles;
+	int num_particles;
 	
 	
 	
@@ -45,7 +45,7 @@ public:
 
 	// Constructor
 	// @param M Number of particles
-	ParticleFilter() : numParticles(0), is_initialized(false) {}
+	ParticleFilter() : num_particles(0), is_initialized(false) {}
 
 	// Destructor
 	~ParticleFilter() {}
@@ -102,7 +102,8 @@ public:
 	 * Set a particles list of associations, along with the associations calculated world x,y coordinates
 	 * This can be a very useful debugging tool to make sure transformations are correct and assocations correctly connected
 	 */
-	Particle SetAssociations(Particle particle, std::vector<int> associations, std::vector<double> sense_x, std::vector<double> sense_y);
+	Particle setAssociations(Particle particle, std::vector<int> associations, std::vector<double> sense_x,
+							 std::vector<double> sense_y);
 	
 	std::string getAssociations(Particle best);
 	std::string getSenseX(Particle best);
